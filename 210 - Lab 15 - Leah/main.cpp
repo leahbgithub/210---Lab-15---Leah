@@ -27,5 +27,33 @@ public:
     }
     
     // Below are the getters
+    string getTitle() const {
+        return title;
+    }
+    
+    int getYearReleased() const {
+        return yearReleased;
+    }
+    
+    string getScreenWriter() const {
+        return screenWriter;
+    }
+    
+    // Method which will use print() to display the details of the movie
+    void print() const {
+        cout << "Film Title: " << title << endl;
+        cout << "Year Released: " << yearReleased << endl;
+        cout << "Screenwriter: " << screenWriter << endl;
+    }
 
 };
+
+// Now we create our main program
+int main() {
+    ifstream inputFile("input.txt");
+    
+    if(!inputFile) {
+        cerr << "Error with opening file." << endl;
+        return 1;
+    }
+}
