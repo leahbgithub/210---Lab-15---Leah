@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// definition for the Movie class with private and public attributes
 class Movie {
 private:
     string title;
@@ -50,22 +51,31 @@ public:
 
 // Now we create our main program
 int main() {
+    // Opens the input file that has all of the date for the movie
     ifstream inputFile("input.txt");
     
+    // Check if there is error with opening, if so---then display error message
     if(!inputFile) {
         cerr << "Error with opening file." << endl;
         return 1;
     }
     
-    vector<Movie> movies;
+    vector<Movie> movies; // vector stores movie objects
     string title, screenWriter;
     int yearReleased;
     
+    // reads file dataa
     while(getline(inputFile, title) && inputFile >> yearReleased) {
-        inputFile.ignore();
+        inputFile.ignore(); // ignores newline characters in the stream
         getline(inputFile, screenWriter);
         
-        Movie tempMovie;
-        tempmovie.
+        Movie tempMovie; // movie temp object
+        tempMovie.setTitle(title);
+        tempMovie.setYearReleased(yearReleased);
+        tempMovie.setScreenWriter(screenWriter);
+        
+        movies.push_back(tempMovie); // puts temp movie object into vector for movie
     }
+    
+    inputFileclose();
 }
