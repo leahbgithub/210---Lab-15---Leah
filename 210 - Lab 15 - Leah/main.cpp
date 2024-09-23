@@ -77,5 +77,12 @@ int main() {
         movies.push_back(tempMovie); // puts temp movie object into vector for movie
     }
     
-    inputFileclose();
+    inputFile.close(); // Close input file after data has been read
+    
+    // Output details for the movies stored in the vector
+    for (const auto& movie: movies) {
+        movie.print(); // Call print method for the movie object
+    }
+    
+    return 0; // terminate program
 }
