@@ -27,5 +27,5 @@ public:
     }
     
     // Below are the getters
-    void
-}
+
+};
