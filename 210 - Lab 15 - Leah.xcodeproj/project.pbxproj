@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		086136452CA2168000CC3B73 /* 210 - Lab 15 - Leah */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "210 - Lab 15 - Leah"; sourceTree = BUILT_PRODUCTS_DIR; };
 		086136482CA2168000CC3B73 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0861364F2CA2174B00CC3B73 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				086136482CA2168000CC3B73 /* main.cpp */,
+				0861364F2CA2174B00CC3B73 /* input.txt */,
 			);
 			path = "210 - Lab 15 - Leah";
 			sourceTree = "<group>";
