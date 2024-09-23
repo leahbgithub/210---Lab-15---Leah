@@ -56,4 +56,16 @@ int main() {
         cerr << "Error with opening file." << endl;
         return 1;
     }
+    
+    vector<Movie> movies;
+    string title, screenWriter;
+    int yearReleased;
+    
+    while(getline(inputFile, title) && inputFile >> yearReleased) {
+        inputFile.ignore();
+        getline(inputFile, screenWriter);
+        
+        Movie tempMovie;
+        tempmovie.
+    }
 }
